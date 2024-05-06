@@ -20,7 +20,7 @@ public class Main {
 		
 		System.out.println("Dígame la ruta del fichero de libros");
 		String rutaFicheroLibros = sc.nextLine();
-		File f = new File("C:\\libros.txt");
+		File f = new File(rutaFicheroLibros);
 		
 		FileReader fr = new FileReader(f);
 		
@@ -37,7 +37,7 @@ public class Main {
 		System.out.println("Dígame la ruta del fichero de préstamos");
 		String rutaFicheroPrestamos = sc.nextLine();
 		
-		f = new File("C:\\prestamos.txt");
+		f = new File(rutaFicheroPrestamos);
 		
 		fr = new FileReader(f);
 		
